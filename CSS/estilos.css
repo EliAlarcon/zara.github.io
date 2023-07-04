@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@700&display=swap');
+
+/*DECLARAR VARIABLES*/
+/*Declarar variable en el elemento raíz*/
+:root{
+    --titulo:hsl(251, 100%, 23%);
+}
+
+/*Cambiamos la letra de todo mi body*/
+body{
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+
+/*Configuración de elementos la clase caja*/
+.caja{
+    border: 1px solid skyblue;
+    background-color: lightblue;
+    color: var(--titulo);
+    width: 200px;
+    height: 400px;
+
+    /*Alinear el texto que se encuentra en la sección*/
+    text-align: center;
+
+    margin: 5px;
+
+    /*En que línea quiero que se muestre el texto de mi sección*/
+    line-height: 120px;
+}
+
+/*Configuramos los elementos de la clase flex-container*/
+.flex-container{
+    /*Para indicar que el elemento va a ser flexible, que sus elementos se adapten a su tamaño*/
+    display: flex;
+
+    border: 2px groove black;
+    background-color: antiquewhite;
+    padding: 30px;
+
+    /*Para indicar la dirección de los elementos de mi contenedor*/
+    flex-direction: row;
+
+    /*Para indicar si queremos que nuestro cuadro no cambie de tamaño al agregar mas*/
+    flex-wrap: wrap;
+
+    /*La propiedad flex-grow me permite indicar la dirección y el tamaño*/
+
+    width: 80%;
+    margin: 20px;
+    /*Para darles una posición distinta entre elementos*/
+    justify-content: space-between;
+
+    height: 600px;
+
+    /*Para indicarle a los elementos en que lugar se deben alinear*/
+    align-items: flex-start;
+
+    background-image: url(/Proyecto-FLEX/imagenes/generacion-computadora.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.caja1{
+    background-color: azure;
+    /*Para indicar en que orden queremos que aparezca el elemento*/
+    order:1;
+    background-image: url(/Proyecto-FLEX/imagenes/laptop.webp);
+    background-size: 30%;
+    background-repeat: no-repeat;
+}
+
+.caja2{
+    order:2;
+    background-image: url(/Proyecto-FLEX/imagenes/computadora.jpg);
+    background-size: 30%;
+    background-repeat: no-repeat;
+}
+
+.caja3{
+    order:3;
+    background-image: url(/Proyecto-FLEX/imagenes/tablet.webp);
+    background-size: 30%;
+    background-repeat: no-repeat;
+}
+
+.nav-bar{
+    text-decoration: none;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+
+.parrafo{
+    padding: 4%;
+    line-height: 100%;
+    text-align: justify;
+}
